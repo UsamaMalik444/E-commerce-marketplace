@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope");
+.product_details_container {
+  padding: 40px 100px 20px 100px;
+  /* max-width: 1800px; */
+  margin: 0 auto;
+  background-color: var(--integ-card-bg);
+  /* height: 100vh; */
+  min-height: 100vh;
+}
+
+.product_details_row {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  /* max-height: 550px; */
+  /* overflow: auto; */
+}
+
+.product_details_col {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.span_note {
+  font-size: 14px;
+  font-weight: 400;
+  color: #df0404;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.back_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 10px;
+}
+
+.prod_back_to_shop {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  background-color: #ffffff;
+  border-width: 0;
+}
+
+/* CSS */
+.button_56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: "Manrope" !important;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
+  touch-action: manipulation;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #ebebeb;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #ffffff;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+.product_details_img {
+  position: relative;
+}
+
+.prod_img {
+  margin-top: 20px;
+  max-width: 550px;
+  height: 500px;
+  /* overflow: hidden; */
+  border-radius: 20px;
+  /* border: 1px solid #dddddd; */
+}
+
+@media (max-width: 480px) {
+  .prod_img {
+    margin-top: 20px;
+    max-width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    /* border: 1px solid #dddddd; */
+  }
+}
+
+.counter_qty span {
+  cursor: pointer;
+}
+.counter_qty .number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.counter_qty .minus,
+.counter_qty .plus {
+  width: 30px !important;
+  height: 34px !important;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 4px 5px !important;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -20px;
+  user-select: none;
+}
+.counter_qty .counter_input {
+  height: 34px !important;
+  width: 100px !important;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding-left: -20px !important;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+}
+
+.add_to_cart_btn {
+  background: #000;
+  border-radius: 8px;
+  padding: 15px;
+  color: #fff;
+  width: 120px;
+  border: none;
+  background: #8affcb;
+  color: #130b46;
+  width: 250px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Manrope" !important;
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.prod_img_carousel_container {
+  margin-top: 20px;
+  max-width: 550px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  /* border: 1px solid #dddddd; */
+}
+
+.prod_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_details_owner {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 40px 0 0px 0;
+  padding-bottom: 25px;
+  color: var(--product-detail-owner);
+}
+
+.product_details_name {
+  font-size: 40px;
+  max-width: 500px;
+  margin-top: 10px;
+  font-family: "Manrope" !important;
+  color: var(--product-details-text);
+}
+
+.product_details_price {
+  /* margin-top: 5px; */
+  font-size: 25px;
+  font-weight: 600;
+  /* position: relative; */
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--product-details-text);
+}
+
+/* .product_details_price::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin-right: 20px;
+  border-radius: 50px;
+} */
+
+.product_details_desc_head {
+  margin: 40px 0 15px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--product-details-desc-head);
+  /* wrap text at whitespace */
+}
+
+.product_desc {
+  color: var(--product-desc);
+}
+.product_details_desc_init {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product_details_desc {
+  /* margin-bottom: 40px; */
+  color: var(--product-details-desc-head);
+
+  white-space: pre-wrap;
+}
+
+.product_details_col input {
+  width: 500px;
+  /* padding: 8px 10px 9px 35px; */
+  height: 50px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden !important;
+}
+.product_details_col input:hover {
+  background: #fafafa;
+}
+.product_details_col input:focus {
+  border: 1px solid #111111;
+  background: #fafafa;
+}
+
+.shippingForm label {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* .prod_img_carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 0px;
+} */
+
+.prod_img_carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quantity_text {
+  /* font-size: 18px;
+  margin-bottom: 10px; */
+  margin: 40px 0 15px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--quantity_text);
+}
+
+@media screen and (max-width: 1300px) {
+  .product_details_img {
+    /* border: 1px solid #000; */
+    border: none;
+    border-radius: 20px;
+  }
+  .product_details_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 70px 20px 70px;
+  }
+  .product_details_row {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .product_details_col input {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product_details_col input {
+    width: 300px;
+  }
+}
+
+/* @media screen and (min-width: 1900px) {
+  .product_details_row {
+    zoom: 1.5;
+  }
+} */
+
+@media screen and (max-width: 870px) {
+  .product_details_row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product_details_col input {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product_details_container {
+    padding: 0px 40px 0px 40px;
+    height: fit-content;
+  }
+  .product_details_row {
+    gap: 40px;
+    max-height: fit-content;
+  }
+}
+@media screen and (max-width: 700px) {
+  .product_details_owner {
+    margin: 40px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .product_details_col input {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .product_details_col input {
+    width: 300px;
+  }
+}
+
+/*  */
+@media screen and (max-width: 340px) {
+  .product_details_col input {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .product_details_price::before {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+.addToCartText {
+  color: var(--product-add-to-cart);
+  min-height: 80px;
+}

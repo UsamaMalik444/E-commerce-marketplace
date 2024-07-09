@@ -1,0 +1,140 @@
+.links_container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 15px;
+  /* align-items: center; */
+  /* gap: 15px; */
+  flex-wrap: wrap;
+  max-width: 740px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+  background-color: var(--payHub-bg-color);
+  /* border: 1px solid rgba(128, 128, 128, 0.7); */
+  border-radius: 15px;
+  min-width: 500px;
+  /* max-width: 40vw; */
+  /* height: 90px; */
+  padding: 0 20px;
+}
+
+.payreq_bg {
+  background-color: #14d19e;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.tipjar_bg {
+  background-color: #ff7fa5;
+  color: #fff;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.icon_container {
+  display: flex;
+  gap: 50px;
+  /* align-self: flex-end; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link_icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px 0px 5px 6px;
+  /* display at end of parent div */
+  cursor: pointer;
+  color: var(--payhub-linkname);
+}
+
+.payreq_col1 {
+  display: flex;
+}
+
+.icon_name {
+  color: var(--payhub-linkname);
+  font-size: 14px;
+}
+
+.link_name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--payhub-linkname);
+  padding: 5px;
+  margin: 10px 40px 10px 40px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  /* margin-top: -71px; */
+  /* background-color: rgba(128, 128, 128, 0.2); */
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px 20px 10px 10px;
+  gap: 20px;
+  margin-top: -95px;
+  position: absolute;
+  right: 0;
+  transform: translate(0, 0);
+}
+
+.filterSVG {
+  color: var(--filter-svg-color);
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  color: var(--dropdown-color);
+}
+
+@media screen and (max-width: 768px) {
+  .filter {
+    margin-top: 20px;
+  }
+  .links_container {
+    gap: 0px;
+    margin-top: 50px;
+  }
+
+  .link {
+    width: 60vw;
+    min-width: 100%;
+  }
+  .icon_container {
+    display: block;
+  }
+  .link_name {
+    margin: 10px 5px 10px 5px;
+    padding: 0 25px 0 0;
+    word-break: break-all;
+  }
+  .filter {
+    top: -91px;
+    position: absolute;
+  }
+}

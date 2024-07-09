@@ -1,0 +1,157 @@
+.orders_container {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 520px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+.orders_container h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.unverified {
+  border: none;
+    background: grey;
+    color: #130b46;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Manrope" !important;
+    border-radius: 50px;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+.saveBtn {
+  border: none;
+  background: #8affcb;
+  color: #130b46;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Manrope" !important;
+  border-radius: 50px;
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+.saveBtn:hover {
+    background: #000;
+    color: white;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 75%;
+    left: 70%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.orders_table {
+    margin: 30px 0 50px 0;
+    width: 100%;
+    empty-cells: hide;
+    /* make corners of table rounded */
+    border-radius: 10px;
+    overflow: hidden;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .table_header{
+    background-color: #220132;
+    color: white;
+  }
+  
+  .sub_table tr:hover:not(:first-child) {
+    background-color: #e5e5e5;
+  }
+  .orders_table td:before {
+    display: none;
+  }
+  .orders_table th,
+  .orders_table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+  }
+  .orders_table th:first-child,
+  .orders_table td:first-child {
+    padding-left: 0;
+  }
+  .orders_table th {
+    text-align: center;
+  }
+  .orders_table th:last-child,
+  .orders_table td:last-child {
+    padding-right: 0;
+  }
+  .orders_table th,
+  .orders_table td {
+    padding: 1em 1em !important;
+  }
+  .orders_table td {
+    position: relative;
+    text-align: center;
+  }
+  
+  .orders_table tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .orders_table td .active_status,
+  .orders_table td .overdue_status,
+  .orders_table td .cxld_status {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }

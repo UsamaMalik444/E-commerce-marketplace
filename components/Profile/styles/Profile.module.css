@@ -1,0 +1,500 @@
+.parent_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.profile_parent {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.profile_wallet {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.profile_wallet div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile_wallet p {
+  line-height: 0;
+  margin-top: 13px;
+  font-weight: bold;
+  font-family: "Manrope" !important;
+}
+
+.profile_wallet span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 7px 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  font-family: "Manrope" !important;
+}
+
+.verified {
+  background: #8affcb;
+  color: #130b46;
+}
+
+.unverified {
+  background: #ff5e4a;
+  color: #fff;
+}
+
+.collections {
+  background: #8affcb;
+  color: #130b46;
+}
+
+.profile_blob {
+  background: #f9f9f9;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 700px;
+  padding: 30px 100px;
+}
+
+.profile_blob h3 {
+  font-weight: bold;
+  font-family: "Manrope" !important;
+}
+
+.profile_bio {
+  max-width: 500px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "Manrope" !important;
+}
+
+.profile_duration {
+  font-size: 15px;
+}
+
+.profile_img {
+  max-width: 960px;
+  height: 540px;
+  /* width: 100px;
+  height: 100px;
+  border-radius: 50%; */
+  overflow: hidden;
+}
+.profile_img_upvoted {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.collection_card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.collection_card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.storefront_img_overlay {
+  /* gray, partially transparent overlay over whole parent div */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.collection_card_info {
+  /* display contents in center */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection_card_info > h5 {
+  color: white;
+}
+
+.collection_card_info > p {
+  color: white;
+}
+
+.profile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile_blob h5 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Manrope" !important;
+}
+
+.interest_cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: "Manrope" !important;
+}
+
+.social_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.interest_cards div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  padding: 10px 20px;
+}
+
+.interest_cards img {
+  width: 15px;
+}
+
+.profile_share {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #fff;
+  box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px;
+  gap: 10px;
+}
+
+.profile_share p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 0;
+  margin-top: 10px;
+  font-family: "Manrope" !important;
+}
+
+.profile_share span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 50px;
+  justify-content: center;
+}
+
+.left {
+  width: 50%;
+}
+
+.link {
+  /* if the link needs to wrap then truncate it with ... on the end */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.profile_container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.profile_container > img {
+  float: left;
+  margin-right: 20px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 45%;
+}
+
+/* create an overlay for .profile img that blurs the image */
+.profile_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(86, 85, 85, 0.527);
+  border-radius: 45%;
+  z-index: 1;
+}
+
+.profile_overlay > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.wallet_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.wallet {
+  font-size: 1.4rem;
+}
+
+.wallet:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.member_date {
+  color: grey;
+  font-size: 12px;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.about {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  /* make it appear it's coming off the page */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.about h2,
+#interests h2 {
+  /* give 1990's vibes */
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+}
+
+.interests ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.interests {
+  display: inline-block;
+  width: 100%;
+  margin-right: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+.interests > li {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.similar_profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  width: 100%;
+}
+
+.friends {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  /* make it appear it's coming off the page */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+
+.friends h2,
+#comments h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.friends ul,
+#comments ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.friends li,
+#comments li {
+  margin-bottom: 10px;
+}
+
+.friends li a {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.friends li a:hover {
+  text-decoration: underline;
+}
+
+.comments li img {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 760px) {
+  .profile_blob {
+    width: 600px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .profile_blob {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* center in parent div */
+    align-items: center;
+    margin-bottom: 2px;
+  }
+
+  .member_date {
+    margin-bottom: 2px;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .interests {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .profile_blob {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile_blob {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile_blob {
+    width: 300px;
+  }
+}

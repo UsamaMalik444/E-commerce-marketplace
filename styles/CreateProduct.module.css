@@ -1,0 +1,1085 @@
+.parent_form_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.faqs {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  text-align: center;
+  color: #000;
+  font-family: "Manrope";
+  font-size: 40px;
+  line-height: 52px;
+  max-width: 550px;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-left: 8vw;
+}
+
+.link_header {
+  display: flex;
+  align-items: center;
+}
+
+.faqs h1 span {
+  color: #f8c89b;
+}
+
+.link_container {
+  max-height: 550px;
+  min-height: fit-content;
+}
+
+.create_product_container {
+  font-family: "Manrope" !important;
+  z-index: 1;
+  /* justify-content: center; */
+}
+
+.create_product_form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.reqemail_reqshipping {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox_container input {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+.checkbox_container input:checked {
+  background: red !important;
+}
+
+.checkbox_text_flex {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox_text {
+  font-size: 14px !important;
+  font-family: "Manrope" !important;
+  color: #585858;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkbox_text #tool_tip {
+  color: red;
+  display: none;
+  font-size: 0.6rem;
+}
+
+.checkbox_text:hover #tool_tip {
+  display: inline;
+}
+
+.create_preview {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 70px;
+}
+
+.create_preview h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.preview_header {
+  display: flex;
+  align-items: center;
+}
+
+.preview_header img {
+  width: 100px;
+}
+
+.button {
+  border: none;
+  background: #8affcb;
+  color: #130b46;
+  width: 250px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Manrope" !important;
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #2ba584;
+  color: white;
+  -webkit-animation: bg-pan-left 2s linear infinite alternate both;
+  animation: bg-pan-left 2s ease-in-out infinite alternate both;
+}
+
+.header {
+  text-align: center;
+  background-image: url(../public/blur-bg.png);
+  padding: 0 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.form_container {
+  background-color: var(--integ-card-bg);
+  box-shadow: 1px 4px 14px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 1px 4px 14px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 4px 14px 0px rgba(0, 0, 0, 0.05);
+  /* border: 1px solid #3b3b3b; */
+  border-radius: 20px;
+  padding: 20px 30px;
+  display: flex;
+  gap: 30px;
+  margin: 30px auto 70px auto;
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  /* flex-direction: column; */
+}
+
+.input {
+  background-color: #f6f6f6bb;
+  border: 1px solid #dfdfdf;
+  font-size: 15px;
+  /* height: 50px; */
+  padding: 0 20px;
+  border-radius: 7px;
+  color: #3b3b3b;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 48%;
+  font-family: "Manrope", sans-serif;
+}
+
+.input_name {
+  background-color: #f6f6f6bb;
+  border: 1px solid #dfdfdf;
+  font-size: 15px;
+  padding: 0 20px;
+  border-radius: 7px;
+  color: #3b3b3b;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+  font-family: "Manrope", sans-serif;
+}
+
+.input_avail {
+  background-color: #f6f6f6bb;
+  border: 1px solid #dfdfdf;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 7px;
+  color: #3b3b3b;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 70px;
+  height: 50px;
+  font-family: "Manrope", sans-serif;
+}
+
+.live_draft_Flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f6f6f6bb;
+  border: 1px solid #dfdfdf;
+  font-size: 15px;
+  height: 50px;
+  border-radius: 7px;
+  color: #3b3b3b;
+  outline: none;
+  margin: 10px 0;
+  width: 280px;
+  gap: 10px;
+  font-family: "Manrope", sans-serif;
+}
+
+.live_draft_Flex div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.file_input {
+  position: relative;
+}
+
+.upload_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload_text p {
+  color: #3b3b3b;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input[type="file"] {
+  width: 100%;
+  height: 90%;
+  /* height: 130px; */
+  border: 1px dashed #000;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  align-items: center;
+  color: transparent;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.input[type="file"]:hover {
+  background: #761ce42c;
+}
+
+.input[type="file"]::before {
+  color: #3b3b3b;
+  display: flex;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  align-items: center;
+  /* content: "Click to Upload Files"; */
+  height: 100%;
+  box-sizing: content-box;
+  font-weight: 500;
+}
+
+.input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.flex_row_input,
+.flex_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+
+.checkbox_div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.check_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.col_half {
+  width: 50%;
+}
+
+.upload_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 1px dashed #c0c0c0;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.upload_container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.upload_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload_name {
+  width: 220px;
+  display: flex;
+  color: var(--create-product-form);
+}
+
+.upload_input > input {
+  margin-bottom: 10px;
+}
+
+.upload_title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--create-product-form);
+}
+
+.upload_span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.input[type="url"] {
+  width: 100%;
+}
+
+.flex_full_row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_area {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  background-color: #f6f6f6bb;
+  border: none;
+  font-size: 1rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #3b3b3b;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+.text_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* overflow: scroll; */
+}
+
+.description_area {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  background-color: #f6f6f6bb;
+  border: none;
+  font-size: 1rem;
+  border-radius: 12px;
+  color: #3b3b3b;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.description_area > div {
+  border: none !important;
+}
+
+.checkbox_text {
+  font-size: 1.1rem;
+  font-family: "Manrope", sans-serif;
+  color: var(--create-product-form);
+  margin-left: 10px;
+}
+
+.product_link {
+  font-size: 1.2rem;
+  font-family: "Manrope", sans-serif;
+  color: black;
+  /* center the items */
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  font-size: 1.1rem;
+  font-family: "Manrope", sans-serif;
+  color: blue;
+  margin-left: 0px;
+  border: none;
+  background: transparent;
+}
+
+.link_button {
+  background: linear-gradient(
+    -90deg,
+    rgb(201, 9, 176) 100%,
+    rgba(152, 0, 186, 0.429) 35%
+  );
+  color: whitesmoke;
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
+  font-family: "Manrope";
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+  /* center button */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.copy_icon {
+  color: #3b3b3b;
+  font-size: 1.2rem;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+  .checkbox_text {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .form_container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 0;
+  }
+  .input[type="file"] {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faqs h1 {
+    text-align: center;
+    color: #000;
+    font-family: "Manrope";
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 400px;
+    font-weight: lighter;
+    margin-top: 0;
+  }
+
+  .parent_form_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  .background_blur {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-bottom: 20vh; */
+  }
+
+  .input {
+    background-color: #f6f6f6bb;
+    border: none;
+    /* font-size: 0.75rem; */
+    /* height: 60px; */
+    padding: 15px 30px;
+    border-radius: 7px;
+    color: #3b3b3b;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 48%;
+    font-family: "Manrope", sans-serif;
+  }
+
+  .input_name {
+    background-color: #f6f6f6bb;
+    border: none;
+    /* font-size: 0.75rem; */
+    padding: 15px 30px;
+    border-radius: 7px;
+    color: #3b3b3b;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+    height: 60px;
+    font-family: "Manrope", sans-serif;
+  }
+
+  .text_area {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    background-color: #f6f6f6bb;
+    border: none;
+    font-size: 0.75rem;
+    padding: 15px 30px;
+    border-radius: 7px;
+    color: #3b3b3b;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+  }
+
+  .checkbox_text {
+    font-size: 0.8rem;
+    font-family: "Manrope", sans-serif;
+    color: #3b3b3b;
+    margin-left: 10px;
+  }
+
+  .checkbox_text #tool_tip {
+    color: red;
+    display: none;
+    font-size: 0.6rem;
+  }
+
+  .checkbox_text:hover #tool_tip {
+    display: block;
+  }
+
+  .link_button {
+    background: linear-gradient(
+      -90deg,
+      rgb(201, 9, 176) 100%,
+      rgba(152, 0, 186, 0.429) 35%
+    );
+    color: whitesmoke;
+    width: 160px;
+    height: 30px;
+    font-size: 16px;
+    font-family: "Manrope";
+    margin-top: 0px;
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    /* center button */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.product_image_container {
+  width: 245px;
+  height: 220px;
+  border-radius: 16px;
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+
+.product_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.remaining,
+.purchased {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchased_amount,
+.remaining_amount {
+  text-align: right;
+  font-weight: bold;
+  font-family: "Manrope" !important;
+}
+
+.product_text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.edit_button {
+  background: #000;
+  color: #fff;
+  padding: 14px 0;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+  font-family: "Manrope" !important;
+  text-align: center !important;
+  margin: 0 auto;
+  /* margin-top: 10px; */
+}
+
+.view_details {
+  margin: 12px auto;
+  font-size: 16px;
+  color: #656565;
+  text-decoration: none;
+  font-family: "Manrope" !important;
+}
+
+.product_title {
+  font-size: 0.9rem;
+  max-width: 150px;
+  line-height: 20px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 12px;
+  font-family: "Manrope" !important;
+}
+
+.product_description {
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.product_owner {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* TOKEN SELECTION MODAL SHOULD APPEAR AS SMALL POP UP IN MIDDLE OF SCREEN */
+
+.show_tokens_button {
+  /* display as plain text in middle of div */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3fa9f5;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid #3fa9f5;
+  background: transparent;
+  border-radius: 15px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  background-color: #f6f6f6bb;
+  border: 1px solid #dfdfdf;
+  font-size: 15px;
+  height: 50px;
+  padding: 0;
+  border-radius: 7px;
+  color: #676767;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+
+.show_tokens_button:focus {
+  outline: none;
+  background-color: #3fa9f5;
+  color: white;
+}
+
+.token_selection_container_overlay {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(236, 236, 236, 0.406);
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  backdrop-filter: blur(5px);
+}
+
+.token_selection_container {
+  width: 50%;
+  height: fit-content;
+  background: transparent;
+
+  /* overflow-y: scroll; */
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 0.2px 0.9px rgba(0, 0, 0, 0.02),
+    0 0.5px 2.2px rgba(0, 0, 0, 0.028), 0 1.1px 4.3px rgba(0, 0, 0, 0.035),
+    0 2.1px 8.1px rgba(0, 0, 0, 0.042), 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.main {
+  position: relative;
+}
+
+.token_selection {
+  background: white;
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  /* overflow-y: scroll; */
+}
+
+.token_selection_title {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font: "Manrope";
+}
+
+/* top close 'X' */
+.token_selection_close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* bottom close  */
+.token_selection_close_btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* display token_selection_row as a grid that adapts size to screen size */
+.token_selection_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  gap: 20px;
+}
+
+.token_selection_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.token_selection_item_selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bdffb7;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  /* animate to make the border glow while it's selected */
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.token_selection_item_logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.token_selection_item_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.token_selection_item_symbol {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.token_selection_item_checkbox {
+  margin-top: 10px;
+}
+
+/* <div className={styles.confirm_modal}>
+        <div className={styles.confirm_modal_container}>
+          <h1>
+            Are you sure you want to create this product?
+          </h1>
+          <div className={styles.confirm_modal_row}>
+            <button
+              className={styles.confirm_modal_button}
+              onClick={() => {
+                setShowPreview(false);
+                createProduct();
+              }}
+            >
+              Yes
+            </button>
+            <button
+              className={styles.confirm_modal_button}
+              onClick={() => {
+                setShowPreview(false);
+                return;
+              }}
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </div> */
+
+/* CONFIRM MODAL */
+
+.confirm_modal {
+  position: fixed;
+  z-index: 1000;
+  width: 60%;
+  height: fit-content;
+  background: transparent;
+  top: 10%;
+  left: 20%;
+  /* overflow-y: scroll; */
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 0.2px 0.9px rgba(0, 0, 0, 0.02),
+    0 0.5px 2.2px rgba(0, 0, 0, 0.028), 0 1.1px 4.3px rgba(0, 0, 0, 0.035),
+    0 2.1px 8.1px rgba(0, 0, 0, 0.042), 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.confirm_modal_container {
+  background: white;
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* overflow-y: scroll; */
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm_modal_container > h1 {
+  font-size: 1rem;
+  font: "Manrope";
+  font-weight: bold;
+  text-align: center;
+}
+
+.confirm_modal_row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.confirm_modal_button {
+  background: transparent;
+  border: 1px solid #3fa9f5;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: "Manrope";
+  font-weight: bold;
+  color: #3fa9f5;
+}
+
+.confirm_modal_button:hover {
+  background: #3fa9f5;
+  color: white;
+}
+
+.confirm_modal_button:focus {
+  outline: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes glow {
+  from {
+    border-color: #bdffb7;
+    box-shadow: 0 0 10px #bdffb7;
+  }
+  to {
+    border-color: #bdffb7;
+    box-shadow: 0 0 20px #bdffb7;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1050px) {
+  .create_preview {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .token_selection_container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .flex_row_input {
+    flex-direction: column;
+    gap: 0;
+  }
+  .flex_row_input input {
+    width: 100%;
+  }
+  .col_half {
+    width: 100% !important;
+  }
+  .show_tokens_button {
+    width: 100% !important;
+  }
+  .live_draft_Flex {
+    width: 100% !important;
+    /* justify-content: center; */
+    gap: 50px;
+  }
+  .input_avail {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .token_selection_container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .input_name {
+    padding: 15px 10px;
+  }
+  .input {
+    padding: 15px 10px;
+  }
+  .text_area {
+    padding: 15px 10px;
+  }
+  .token_selection_close {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .flex_row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .check_row {
+    flex-direction: column;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .checkbox_text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1px;
+  }
+
+  .check_row,
+  .check_row input {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .flex_row select,
+  .flex_row input,
+  .flex_row_input select,
+  .flex_row_input input {
+    width: 100%;
+  }
+  .col_half {
+    width: 100%;
+  }
+
+  .button {
+    border: none;
+    background: #8affcb;
+    color: #130b46;
+    width: 230px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Manrope" !important;
+    border-radius: 50px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 30px auto;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+}

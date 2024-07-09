@@ -1,0 +1,462 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5px;
+  background-color: transparent;
+  color: black;
+  font-family: "Manrope" !important;
+}
+
+.logo {
+  /* stays top left of parent div */
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 3000;
+  cursor: pointer;
+}
+
+.bigLogo {
+  width: var(--logo-width);
+  /* height: 70px;
+  width: 290px; */
+  margin-top: var(--logo-margin-top);
+  cursor: pointer;
+}
+
+.betaLogo {
+  width: 7%;
+  /* height: 70px;
+  width: 290px; */
+  margin-top: var(--logo-margin-top);
+}
+
+.walletBalance {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.walletBalanceItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--nav-links);
+}
+
+.smallLogo {
+  width: 75px;
+  margin-left: 100%;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 5rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menuOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(116, 116, 116, 0.5);
+  z-index: 11;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  /* left-align text */
+  align-items: left;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 14vw;
+  z-index: 2000;
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-left: 15px;
+}
+
+.menuItem {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.dashItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.toggleItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  width: 230px;
+}
+
+.toggleItem > span {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 600;
+  color: #130b46;
+  cursor: pointer;
+  font-family: "Manrope" !important;
+}
+
+.socialItem {
+  /* display at bottom of screen*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.menuItem a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menuItem a span {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menuItem a:hover {
+  color: #98e599;
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 20px;
+  color: var(--header-addtoCard-icon) !important;
+  font-family: "Manrope" !important;
+  cursor: pointer;
+}
+
+.socialIcon {
+  font-size: 24px;
+  color: var(--social-icon-color);
+  cursor: pointer;
+  font-family: "Manrope" !important;
+}
+
+.connectApp {
+  color: var(--connect-app-color);
+}
+
+.userDashboardOption {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: black;
+  font-family: "Manrope" !important;
+  cursor: pointer;
+}
+
+/* .loginOptions_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(168, 168, 168, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 12000;
+  backdrop-filter: blur(10px);
+} */
+
+.loginOptions {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  /* middle of screen */
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.loginOptions_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.loginOptions_select h3 {
+  font-size: 20px;
+}
+
+.loginOption1 {
+  border-radius: 50px;
+  background: #14d19e;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Manrope" !important;
+}
+
+.loginOption2 {
+  border-radius: 50px;
+  background: #130b46;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Manrope" !important;
+}
+
+.loginOption_ind {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loginOption_ind_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.loginOption1 span,
+.loginOption2 span {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Manrope" !important;
+}
+
+.not_registered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.not_registered span {
+  color: #4891ff;
+  font-weight: bold;
+  font-family: "Manrope" !important;
+}
+
+.closeButton {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+}
+
+/* media screen for mobile */
+@media screen and (max-width: 768px) {
+  .bigLogo {
+    width: 100px;
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
+    z-index: 1000;
+    background-color: #ffffff;
+  }
+
+  .smallLogo {
+    display: flex;
+    height: auto;
+    width: 5vw;
+    margin-left: 20px;
+  }
+
+  .menuItem span {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: black;
+  }
+
+  .icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .walletItem {
+    display: none;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background-color: transparent;
+  color: black;
+  font-family: "Manrope" !important;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 5rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* width: 288px; */
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  /* left-align text */
+  align-items: left;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 14vw;
+  z-index: 2000;
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-left: 15px;
+}
+
+.menuItem {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.dashItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menuItem a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menuItem a span {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menuItem a:hover {
+  color: #98e599;
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+.userDashboardOption {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: black;
+  cursor: pointer;
+}
+
+.loginOptions_select {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.headerToggle {
+  color: var(--headerToggle) !important;
+  /* color: red; */
+}
+
+@media screen and (max-width: 960px) {
+  .menuContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loginOptions_select {
+    width: fit-content;
+    padding: 10px;
+  }
+
+  .loginOption1,
+  .loginOption2 {
+    width: 200px;
+  }
+}
+
+.walletAddress {
+  color: black;
+}

@@ -1,0 +1,76 @@
+.integ_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.integ_card {
+  width: 350px;
+  height: 280px;
+  padding: 25px;
+  background: var(--integ-card-bg);
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.top_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.integ_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  /* border: 1px solid #e6e6e6; */
+}
+
+.integ_logo img {
+  width: 30px;
+}
+
+.integ_card h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.integ_card p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.integ_card button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #bbbbbb;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 10px;
+  background: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.integ_card button:hover {
+  background: #f4f4f4;
+  border-radius: 50px;
+}
+
+.textColor {
+  color: var(--integration-text-color);
+}
+
+@media only screen and (max-width: 335px) {
+  .integ_card {
+    height: fit-content;
+  }
+}
