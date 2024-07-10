@@ -58,7 +58,7 @@ const PurchasedClockworkOrders = () => {
   const [cronTimeString, setCronTimeString] = useState("");
   const [selectedSettings, setSelectedSettings] = useState(null);
   const connection = new Connection(
-    "https://mainnet.helius-rpc.com/?api-key=bb0cb5ed-9c3e-421b-a379-2dc684ad0e9f",
+    "https://mainnet.helius-rpc.com/?api-key",
     "confirmed"
   );
   const shopSecretKey = process.env.NEXT_PUBLIC_SHOP_SECRET_KEY;
